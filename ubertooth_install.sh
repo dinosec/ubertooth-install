@@ -25,8 +25,7 @@ LIBBTBB_URL=https://github.com/greatscottgadgets/libbtbb/archive/2015-09-R2.tar.
 LIBBTBB_FILENAME=libbtbb-2015-09-R2.tar.gz
 LIBBTBB_DIR=libbtbb-2015-09-R2
 LIBBTBB_BACK=../..
-LIBBTBB_PATCH_URL=https://github.com/dinosec/ubertooth-install/0001-Fix-Ubertooth-issue-112-duplicate-plugin-names.patch
-xxx
+LIBBTBB_PATCH_URL=https://raw.githubusercontent.com/dinosec/ubertooth-install/master/0001-Fix-Ubertooth-issue-112-duplicate-plugin-names.patch
 
 UBERTOOTH_URL=https://github.com/greatscottgadgets/ubertooth/releases/download/2015-09-R2/ubertooth-2015-09-R2.tar.xz
 UBERTOOTH_FILENAME=ubertooth-2015-09-R2.tar.xz
