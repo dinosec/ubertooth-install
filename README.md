@@ -4,7 +4,7 @@ Ubertooth installation script for Kali Linux 2.x.
 This script requires Internet access and will donwload multiple software packages to the current directory.
 
 # Version:
-v0.1
+2015-09-R2
 
 # Tools Versions:
 - Ubertooth & libbtbb: 2015-09-R2
@@ -18,9 +18,18 @@ v0.1
 
 # Usage:
 ```
-$ mkdir Ubertooth
-$ cp ubertooth_install.sh Ubertooth/
-$ cd Ubertooth
+From Git:
+$ git clone https://github.com/dinosec/ubertooth-install.git
+$ cd ubertooth-install
+
+(or)
+
+From latest release:
+$ wget https://github.com/dinosec/ubertooth-install/archive/2015-09-R2.tar.gz
+$ tar xzf 2015-09-R2.tar.gz
+$ cd ubertooth-install-2015-09-R2
+
+Go:
 $ sudo ./ubertooth_install.sh
 ```
 

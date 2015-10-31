@@ -6,8 +6,8 @@
 # by Raul Siles
 # Copyright (c) 2015 DinoSec SL (www.dinosec.com)
 #
-# Version: 0.1
-# Date: 2015-09-29
+# Version: 2015-09-R2
+# Date: 2015-10-29
 #
 # Ubertooth and libbtbb versions: 2015-09-R2
 # Kali Linux version: 2.0.0
@@ -16,10 +16,11 @@
 #
 
 # Versions
-VERSION=0.1
+VERSION=2015-09-R2
 KALI_VERSION=2.0.0
 UBER_VERSION=2015-09-R2
 WIRESHARK_VERSION=1.12.6
+KISMET_VERSION=2013-03-R1b
 
 LIBBTBB_URL=https://github.com/greatscottgadgets/libbtbb/archive/2015-09-R2.tar.gz
 LIBBTBB_FILENAME=libbtbb-2015-09-R2.tar.gz
@@ -33,9 +34,9 @@ UBERTOOTH_DIR_HOST=ubertooth-2015-09-R2/host
 UBERTOOTH_DIR=ubertooth-2015-09-R2
 UBERTOOTH_BACK=../../..
 
-KISMET_URL=https://kismetwireless.net/code/kismet-2013-03-R1b.tar.xz
-KISMET_FILENAME=kismet-2013-03-R1b.tar.xz
-KISMET_DIR=kismet-2013-03-R1b
+KISMET_URL=https://kismetwireless.net/code/kismet-$KISMET_VERSION.tar.xz
+KISMET_FILENAME=kismet-$KISMET_VERSION.tar.xz
+KISMET_DIR=kismet-$KISMET_VERSION
 KISMET_CONF_FILE=/usr/local/etc/kismet.conf
 KISMET_BACK=..
 
@@ -59,6 +60,12 @@ echo " - Script to install Ubertooth $UBER_VERSION in Kali Linux $KALI_VERSION -
 echo
 echo "   Version: $VERSION"
 echo "   By Raul Siles (DinoSec - www.dinosec.com)"
+echo
+echo "   Tools Versions:"
+echo "   - Ubertooth & libbtbb: $UBER_VERSION"
+echo "   - Kali Linux: $KALI_VERSION"
+echo "   - Wireshark: $WIRESHARK_VERSION"
+echo "   - Kismet: $KISMET_VERSION"
 echo
 
 echo "  (*** Internet access is required ***)"
