@@ -6,32 +6,31 @@
 # by Raul Siles
 # Copyright (c) 2015 DinoSec SL (www.dinosec.com)
 #
-# Version: 2015-09-R2
-# Date: 2015-10-29
+# Version: 2015-10-R1
+# Date: 2015-10-31
 #
-# Ubertooth and libbtbb versions: 2015-09-R2
+# Ubertooth and libbtbb versions: 2015-10-R1
 # Kali Linux version: 2.0.0
 # Wireshark version: 1.12.6
 # Kismet version: 2013-03-R1b
 #
 
 # Versions
-VERSION=2015-09-R2
+VERSION=2015-10-R1
 KALI_VERSION=2.0.0
-UBER_VERSION=2015-09-R2
+UBER_VERSION=2015-10-R1
 WIRESHARK_VERSION=1.12.6
 KISMET_VERSION=2013-03-R1b
 
-LIBBTBB_URL=https://github.com/greatscottgadgets/libbtbb/archive/2015-09-R2.tar.gz
-LIBBTBB_FILENAME=libbtbb-2015-09-R2.tar.gz
-LIBBTBB_DIR=libbtbb-2015-09-R2
+LIBBTBB_URL=https://github.com/greatscottgadgets/libbtbb/archive/$UBER_VERSION.tar.gz
+LIBBTBB_FILENAME=libbtbb-$UBER_VERSION.tar.gz
+LIBBTBB_DIR=libbtbb-$UBER_VERSION
 LIBBTBB_BACK=../..
-LIBBTBB_PATCH_URL=https://raw.githubusercontent.com/dinosec/ubertooth-install/master/0001-Fix-Ubertooth-issue-112-duplicate-plugin-names.patch
 
-UBERTOOTH_URL=https://github.com/greatscottgadgets/ubertooth/releases/download/2015-09-R2/ubertooth-2015-09-R2.tar.xz
-UBERTOOTH_FILENAME=ubertooth-2015-09-R2.tar.xz
-UBERTOOTH_DIR_HOST=ubertooth-2015-09-R2/host
-UBERTOOTH_DIR=ubertooth-2015-09-R2
+UBERTOOTH_URL=https://github.com/greatscottgadgets/ubertooth/releases/download/$UBER_VERSION/ubertooth-$UBER_VERSION.tar.xz
+UBERTOOTH_FILENAME=ubertooth-$UBER_VERSION.tar.xz
+UBERTOOTH_DIR_HOST=ubertooth-$UBER_VERSION/host
+UBERTOOTH_DIR=ubertooth-$UBER_VERSION
 UBERTOOTH_BACK=../../..
 
 KISMET_URL=https://kismetwireless.net/code/kismet-$KISMET_VERSION.tar.xz
@@ -131,16 +130,6 @@ sed -i 's/\(pcapdump,gpsxml,netxml,nettxt,alert\)/\1,pcapbtbb/g' $KISMET_CONF_FI
 #OR:
 #sed -i 's/logtypes=pcapdump/logtypes=pcapbtbb,pcpadump/g' $KISMET_CONF_FILE
 #
-
-echo
-echo "[*] Patching Ubertooth Wireshark plugins (Ubertooth issue 112)..."
-# https://github.com/greatscottgadgets/libbtbb/commit/ae840325b61ad74181b079db288b4309ce96746b
-# https://github.com/greatscottgadgets/ubertooth/issues/112
-# https://github.com/greatscottgadgets/libbtbb/issues/29
-cd $LIBBTBB_DIR
-wget $LIBBTBB_PATCH_URL
-patch -p1 < 0001-Fix-Ubertooth-issue-112-duplicate-plugin-names.patch
-cd ..
 
 echo
 echo "[*] Building the Ubertooth BTBB Wireshark plugin..."
