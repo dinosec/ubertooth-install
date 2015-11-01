@@ -24,9 +24,12 @@ $ cd ubertooth-install
 
 (or)
 
-From latest release:
-$ wget https://github.com/dinosec/ubertooth-install/archive/2015-10-R1.tar.gz
-$ tar xzf 2015-10-R1.tar.gz
+From the latest release: (using curl or wget)
+$ curl -LOJ https://github.com/dinosec/ubertooth-install/archive/2015-10-R1.tar.gz
+(or)
+$ wget --content-disposition https://github.com/dinosec/ubertooth-install/archive/2015-10-R1.tar.gz
+
+$ tar xzf ubertooth-install-2015-10-R1.tar.gz
 $ cd ubertooth-install-2015-10-R1
 
 Go:
