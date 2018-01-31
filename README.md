@@ -3,7 +3,7 @@ Ubertooth installation script for Kali Linux 2.x.
 
 This script requires Internet access and will donwload multiple software packages to the current directory.
 
-*IMPORTANT*: This script has not been updated, and will not be updated in the future, as the current Kali Linux Rolling version (e.g. 2017.3), already has the latest Ubertooth & libbtbb packages (e.g. 2017-03-R2). Ubertooth tools packet captures work by default with the latest Wireshark versions (see Ubertooth 2017-03-R2 release notes). Us the latest Kali Linux version
+*IMPORTANT*: This script has not been updated since version 2015-10-R1, and will not be updated in the future, as the current Kali Linux Rolling version (e.g. 2017.3), already has the latest Ubertooth & libbtbb packages (e.g. 2017-03-R2). Ubertooth tools packet captures work by default with the latest Wireshark versions (see Ubertooth 2017-03-R2 release notes). Us the latest Kali Linux version
 
 # Version:
 2015-10-R1
